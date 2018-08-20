@@ -245,7 +245,6 @@ void ParticleFilter::resample() {
 
 	vector<Particle> resampled_particles;
 
-	  // Generating random index for the Sample Wheel
 	  uniform_int_distribution<int> uniintdist(0, num_particles-1);
 	  auto index = uniintdist(gen);
 
